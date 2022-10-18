@@ -1,15 +1,18 @@
 :root {
+    --dark-primary-background: #0C0C0C;
+    --dark-secondary-background: #0D1317;
+    --main-font: #fffcf2ff;
+    --icon-text: #fffcf2ff;
+    --icon-bg: #8D0000;
     --floral-white: #fffcf2ff;
-    --pale-silver: #ccc5b9ff;
     --black-olive: #403d39ff;
-    --eerie-black: #252422ff;
-    --flame: #eb5e28ff;
 }
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 h2 {
@@ -19,8 +22,8 @@ h2 {
 body {
     display: flex;
     flex-direction: column;
-    background-color: var(--eerie-black);
-    color: var(--floral-white);
+    background-color: var(--dark-primary-background);
+    color: var(--main-font);
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
@@ -28,8 +31,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
     width: 100%;
-    height: 5vh;
+    height: 10vh;
+    background-color: var(--dark-primary-background);
+    font-size: 1.4em;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -39,7 +48,7 @@ header {
 }
 
 #navbar a {
-    color: var(--flame);
+    color: var(---icon-text);
     text-decoration: none;
     padding-right: 16px;
 }
@@ -53,9 +62,12 @@ header {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 75vh;
+    height: 100vh;
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
+    background-image: url('images/pexels-dark.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #hero-intro {
@@ -79,6 +91,7 @@ header {
 
 #hero-icons img {
     border-radius: 50%;
+    border: 3px solid white;
     height: 60%;
 }
 
@@ -91,35 +104,61 @@ header {
 }
 
 #hero-socials i {
-    background-color: var(--flame);
-    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--icon-bg);
+    height: 80px;
+    width: 80px;
+    font-size: 40px;
     border-radius: 50%;
+    border: 3px solid white;
 }
 
 #hero-socials a {
-    color: var(--floral-white);
+    color: var(--icon-text);
     text-decoration: none;
 }
 
 #about-me {
-    background-color: var(--black-olive);
+    background-color: var(--dark-primary-background);
     width: 100%;
-    height: 30vh;
+    height: 50vh;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #my-description {
-    width: 50%;
-    font-size: 1.4em;
+    width: 60%;
 }
 
-#projects {
+#my-skills {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills-box {
+    display: flex;
+    background-color: var(--dark-secondary-background);
+    height: 80%;
+    width: 60%;
+}
+
+#portfolio {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background-color: var(--dark-secondary-background);
     width: 100%;
-    height: 30vh;
+    height: 50vh;
 }
 
 #project-cards {
@@ -128,8 +167,8 @@ header {
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
-    height: 25vh;
-    width: 80%;
+    height: 80%;
+    width: 90%;
 }
 
 .project {
@@ -137,6 +176,15 @@ header {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    width: 25%;
+    background-color: var(--dark-primary-background);
+    padding: 30px;
+}
+
+.project-image {
+    min-height: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .project-icons {
@@ -144,10 +192,54 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
 }
 
+.project-icons i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--icon-bg);
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
 .project-icons a {
-    color: var(--floral-white);
+    color: var(--icon-text);
     text-decoration: none;
+}
+
+#pokemon-team-planner-image {
+    background-image: url(images/s-tsuchiya-_WjhfEzRDak-unsplash.jpg);
+}
+
+#etch-a-sketch-image {
+    background-image: url(images/s-tsuchiya-_WjhfEzRDak-unsplash.jpg);
+}
+
+#rock-paper-scissors-image {
+    background-image: url(images/s-tsuchiya-_WjhfEzRDak-unsplash.jpg);
+}
+
+#company-landing-page-image {
+    background-image: url(images/s-tsuchiya-_WjhfEzRDak-unsplash.jpg);
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    background-color: var(--dark-primary-background);
+}
+
+#contact-icons {
+    display: flex;
+    width: 50%;
+    height: 100%;
+
 }
