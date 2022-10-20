@@ -15,8 +15,22 @@
     scroll-behavior: smooth;
 }
 
-h2 {
+h1 {
     font-family: 'Montserrat', sans-serif;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
 }
 
 body {
@@ -34,7 +48,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9;
+    z-index: 22;
     width: 100%;
     height: 10vh;
     background-color: var(--dark-primary-background);
@@ -53,9 +67,68 @@ header {
     padding-right: 16px;
 }
 
-#nav-and-options button {
-    display: flex;
-}
+ /* The switch - the box around the slider */
+ .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  } 
 
 #hero {
     display: flex;
@@ -80,11 +153,13 @@ header {
 #hero-intro {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
     margin-top: 10vh;
     height: 50%;
     width: 50%;
+}
+
+#demo {
+    text-align: left;
 }
 
 #hero-icons {
@@ -99,7 +174,6 @@ header {
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -139,7 +213,7 @@ header {
 #about-me {
     background-color: var(--dark-primary-background);
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -173,7 +247,7 @@ header {
     align-items: center;
     background-color: var(--dark-secondary-background);
     width: 100%;
-    height: 50vh;
+    height: 70vh;
 }
 
 #project-cards {
@@ -247,7 +321,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 30vh;
     width: 100%;
     background-color: var(--dark-primary-background);
 }
@@ -274,8 +348,18 @@ header {
     width: 100%;
 }
 
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+
 @media screen and (max-width: 700px) {
-    #hero, #hero-icons, #contact, #about-me, #portfolio {
+    #hero, #hero-intro, #hero-icons, #contact, #about-me, #portfolio {
         flex-direction: column;
         max-width: 100%;
         width: 100%;
