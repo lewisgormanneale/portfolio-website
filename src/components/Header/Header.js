@@ -1,5 +1,6 @@
 import React from "react";
 import NavList from "../NavList/NavList";
+import { IoChevronDown } from "react-icons/io5";
 import "./Header.css";
 
 export default function Header() {
@@ -21,13 +22,15 @@ export default function Header() {
           </div>
           <div className="avatar-container">
             <img
-              src="images/virtual-me.png"
+              src="images/memoji.jpeg"
               alt="A pixelated avatar of Lewis"
               className="avatar"
             ></img>
           </div>
         </div>
-        <p className="scroll-arrow">Arrow here</p>
+        <p className="scroll-arrow">
+          <IoChevronDown />
+        </p>
       </header>
     </div>
   );

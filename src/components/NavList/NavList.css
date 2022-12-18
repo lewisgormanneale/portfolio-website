@@ -5,7 +5,7 @@
 }
 
 .toggle {
-  color: var(--icon-bg);
+  /* color: var(--icon-bg); */
   z-index: 2;
   top: 20px;
   padding: 8px 0;
