@@ -5,12 +5,18 @@
 }
 
 .toggle {
-  /* color: var(--icon-bg); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon-bg);
   z-index: 2;
   top: 20px;
-  padding: 8px 0;
   cursor: pointer;
   position: absolute;
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 3px;
 }
 
 .dark-mode-toggle {
@@ -25,7 +31,6 @@
   width: 20px;
   height: 30px;
 }
-
 .menu-toggle > svg {
   width: 30px;
   height: 30px;

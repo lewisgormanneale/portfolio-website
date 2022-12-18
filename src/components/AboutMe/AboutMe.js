@@ -5,7 +5,7 @@ export default function AboutMe() {
   return (
     <section className="about-me">
       <div className="about-me-description">
-        <h2>About Me</h2>
+        <h2>About Me 🙋🏻‍♂️</h2>
         <p>
           I'm an aspiring developer currently enrolled at the School Of Code
           bootcamp learning Full Stack Development.
