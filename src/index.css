@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --dark-primary-background: #0c0c0c;
+  --dark-secondary-background: #0d1317;
+  --main-font: #fffcf2ff;
+  --icon-text: #fffcf2ff;
+  --icon-bg: #8d0000;
+  --floral-white: #fffcf2ff;
+  --black-olive: #403d39ff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
