@@ -7,7 +7,7 @@ import Toolkit from "./components/Toolkit/Toolkit";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
       <main>
         <Projects />
