@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.avatar-container {
+  max-width: 50%;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 0;
+}
+.scroll-arrow {
+  position: absolute;
+  top: 90vh;
+}

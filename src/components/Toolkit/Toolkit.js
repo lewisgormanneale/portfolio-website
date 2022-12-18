@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Contact() {
+export default function Toolkit() {
   return (
     <div>
-      <h2>Contact Me</h2>
+      <h2>My Toolkit</h2>
     </div>
   );
 }
