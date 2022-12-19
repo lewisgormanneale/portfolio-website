@@ -1,3 +1,43 @@
 .contact {
-  background-color: #f3ffff;
+  display: flex;
+  flex-direction: column;
+  background-color: #e7ffff;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 30px;
+  gap: 20px;
+}
+
+.contact-greeting-and-socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact-greeting {
+  width: 500px;
+  min-width: 500px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+  width: 300px;
+}
+
+.contact-form-container {
+  width: 300px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
