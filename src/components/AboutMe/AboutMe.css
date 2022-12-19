@@ -1,8 +1,32 @@
 .about-me {
   display: flex;
+  flex-direction: column;
   background-color: white;
 }
 
+.about-me-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 20px;
+}
+
+.about-me-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 300px;
+  width: 500px;
+}
+
+.image-container {
+  width: 300px;
+  text-align: center;
+}
+
 .me-irl {
-  width: 250px;
+  width: 300px;
+  border-radius: 10px;
 }

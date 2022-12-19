@@ -5,7 +5,10 @@ export default function Projects() {
   return (
     <section className="projects">
       <h2>My Projects ⚡️</h2>
-      <p>(Hover or tap for info)</p>
+      <p>
+        Hover or tap for information on each project. More of my projects can be
+        found on <a href="https://github.com/lewisgormanneale">GitHub</a>
+      </p>
       <div className="project-row">
         <div className="project project-large" id="mdoc-project">
           <img
