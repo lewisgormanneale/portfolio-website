@@ -1,4 +1,5 @@
 import React from "react";
+import { IoLogoGithub } from "react-icons/io5";
 import "./Projects.css";
 
 export default function Projects() {
@@ -7,7 +8,10 @@ export default function Projects() {
       <h2>My Projects ⚡️</h2>
       <p>
         Hover or tap for information on each project. More of my projects can be
-        found on <a href="https://github.com/lewisgormanneale">GitHub</a>
+        found on{" "}
+        <a href="https://github.com/lewisgormanneale">
+          GitHub <IoLogoGithub />
+        </a>
       </p>
       <div className="project-row">
         <div className="project project-large" id="mdoc-project">
