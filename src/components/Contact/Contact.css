@@ -30,14 +30,31 @@
   align-items: center;
   margin: 20px;
   width: 300px;
+  font-size: 2rem;
 }
 
-.contact-form-container {
-  width: 300px;
+.social-icon {
+  background-color: white;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  border: 1px solid var(--icon-bg);
+  cursor: pointer;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.social-icon:hover {
+  background-color: rgba(187, 187, 187, 0.28);
+}
+
+#linkedin {
+  color: #0a66c2;
+}
+
+#github {
+  color: #24292f;
+}
+
+#twitter {
+  color: #00a3f4;
 }
