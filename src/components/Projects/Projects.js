@@ -13,8 +13,8 @@ export default function Projects() {
             src="images/mdoc-screenshot.png"
             alt="project screenshot"
           ></img>
-          <h3>My Days Of Code</h3>
-          <div className="project-focus-content">
+          <div className="project-overlay">
+            <h3>My Days Of Code</h3>
             <p>A website to record and share your #100DaysOfCode progress.</p>
             <div className="project-links">
               <a
@@ -36,16 +36,97 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="project project-small">
-          <h3>SOC Final Project</h3>
+        <div className="project project-small" id="rumu-project">
+          <img
+            className="project-screenshot"
+            src="images/rumu-placeholder.jpg"
+            alt="project screenshot"
+          ></img>
+          <div className="project-overlay">
+            <h3>Studio Rumu</h3>
+            <p>Online storefront - under construction...</p>
+            {/* <div className="project-links">
+              <a
+                href="https://mydaysofcode.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="project-button"
+              >
+                View Live
+              </a>
+              <a
+                href="https://github.com/lewisgormanneale/my-days-of-code"
+                target="_blank"
+                rel="noreferrer"
+                className="project-button"
+              >
+                GitHub
+              </a>
+            </div> */}
+          </div>
         </div>
       </div>
       <div className="project-row">
         <div className="project project-small" id="ptp-project">
-          <h3>Pokémon Team Planner</h3>
+          <img
+            className="project-screenshot"
+            src="images/ptp-screenshot.png"
+            alt="project screenshot"
+          ></img>
+          <div className="project-overlay">
+            <h3>Pokémon Team Planner</h3>
+            <p>
+              A Pokémon Team Planner to help you plan out a team of 6 for a game
+              in the mainline RPG series, confirming type and HM coverage.
+            </p>
+            <div className="project-links">
+              <a
+                href="https://lewisgormanneale.github.io/pokemon-team-planner/"
+                target="_blank"
+                rel="noreferrer"
+                className="project-button"
+              >
+                View Live
+              </a>
+              <a
+                href="https://github.com/lewisgormanneale/pokemon-team-planner"
+                target="_blank"
+                rel="noreferrer"
+                className="project-button"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="project project-large">
-          <h3>Studio Rumu</h3>
+        <div className="project project-large" id="soc-project">
+          <img
+            className="project-screenshot"
+            src="images/soc-placeholder.png"
+            alt="project screenshot"
+          ></img>
+          <div className="project-overlay">
+            <h3>SOC Final Project</h3>
+            <p>Under Construction....</p>
+            {/* <div className="project-links">
+              <a
+                href="https://mydaysofcode.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="project-button"
+              >
+                View Live
+              </a>
+              <a
+                href="https://github.com/lewisgormanneale/my-days-of-code"
+                target="_blank"
+                rel="noreferrer"
+                className="project-button"
+              >
+                GitHub
+              </a>
+            </div> */}
+          </div>
         </div>
       </div>
     </section>
