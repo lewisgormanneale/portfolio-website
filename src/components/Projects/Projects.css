@@ -44,10 +44,17 @@
   width: 100%;
   height: 100%;
   margin: 0;
-  width: 100%;
   object-fit: cover;
   object-position: left top;
   display: block;
+}
+
+#rumu-project > .project-screenshot {
+  object-position: center center;
+}
+
+#ptp-project > .project-screenshot {
+  object-position: center top;
 }
 
 .project-overlay {
