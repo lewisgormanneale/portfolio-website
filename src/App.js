@@ -1,3 +1,5 @@
+import React, { useContext } from "react";
+import { ThemeContext } from "./contexts/ThemeContext";
 import Header from "./components/Header/Header";
 import Projects from "./components/Projects/Projects";
 import AboutMe from "./components/AboutMe/AboutMe";
@@ -6,8 +8,10 @@ import Footer from "./components/Footer/Footer";
 import Toolkit from "./components/Toolkit/Toolkit";
 
 function App() {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <div className="app">
+    <div className={`app ${darkMode ? "app-dark" : "app-light"}`}>
       <Header />
       <main>
         <Projects />

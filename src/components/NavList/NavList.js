@@ -1,8 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { ThemeContext } from "../../contexts/ThemeContext";
 import "./NavList.css";
 import { IoMenu, IoMoon } from "react-icons/io5";
 
 export default function NavList({ toggleScrollArrowVisibility }) {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
+  const toggleDarkMode = () => {
+    if (darkMode) {
+      theme.dispatch({ type: "LIGHTMODE" });
+    } else {
+      theme.dispatch({ type: "DARKMODE" });
+    }
+  };
+
   const [navMenuVisibility, setNavMenuVisibility] =
     useState("nav-menu-container");
 
@@ -47,7 +59,7 @@ export default function NavList({ toggleScrollArrowVisibility }) {
           </li>
         </ul>
       </div>
-      <div className="dark-mode-toggle toggle">
+      <div onClick={toggleDarkMode} className="dark-mode-toggle toggle">
         <IoMoon />
       </div>
       <div onClick={toggleNavMenuVisibility} className="menu-toggle toggle">

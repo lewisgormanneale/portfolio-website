@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../contexts/ThemeContext";
 import NavList from "../NavList/NavList";
 import { IoChevronDown } from "react-icons/io5";
 import "./Header.css";
 
 export default function Header() {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="header-wrapper">
       <NavList />
