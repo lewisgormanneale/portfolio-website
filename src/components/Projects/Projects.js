@@ -4,12 +4,16 @@ import "./Projects.css";
 
 export default function Projects() {
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <h2>My Projects ⚡️</h2>
       <p>
         Hover or tap for information on each project. More of my projects can be
         found on{" "}
-        <a href="https://github.com/lewisgormanneale">
+        <a
+          href="https://github.com/lewisgormanneale"
+          target="_blank"
+          rel="noreferrer"
+        >
           GitHub <IoLogoGithub />
         </a>
       </p>
@@ -51,7 +55,8 @@ export default function Projects() {
           ></img>
           <div className="project-overlay">
             <h3>Studio Rumu</h3>
-            <p>Online storefront - under construction...</p>
+            <p>Online Storefront</p>
+            <p>(Under Construction)</p>
             {/* <div className="project-links">
               <a
                 href="https://mydaysofcode.netlify.app/"
@@ -114,7 +119,7 @@ export default function Projects() {
           ></img>
           <div className="project-overlay">
             <h3>SOC Final Project</h3>
-            <p>Under Construction....</p>
+            <p>(Under Construction)</p>
             {/* <div className="project-links">
               <a
                 href="https://mydaysofcode.netlify.app/"
