@@ -15,9 +15,27 @@ export default function Contact() {
             out to me on one of my socials!
           </p>
           <div className="social-icons">
-            <IoLogoLinkedin className="social-icon" id="linkedin" />
-            <IoLogoGithub className="social-icon" id="github" />
-            <IoLogoTwitter className="social-icon" id="twitter" />
+            <a
+              href="https://www.linkedin.com/in/lewisgormanneale/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IoLogoLinkedin className="social-icon" id="linkedin" />
+            </a>
+            <a
+              href="https://github.com/lewisgormanneale"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IoLogoGithub className="social-icon" id="github" />
+            </a>
+            <a
+              href="https://twitter.com/lewisgneale"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <IoLogoTwitter className="social-icon" id="twitter" />
+            </a>
           </div>
         </div>
       </div>

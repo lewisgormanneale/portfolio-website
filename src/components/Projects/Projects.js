@@ -114,11 +114,11 @@ export default function Projects() {
         <div className="project project-large" id="soc-project">
           <img
             className="project-screenshot"
-            src="images/soc-placeholder.png"
+            src="images/soc-placeholder.jpg"
             alt="project screenshot"
           ></img>
           <div className="project-overlay">
-            <h3>SOC Final Project</h3>
+            <h3>School of Code Final Project</h3>
             <p>(Under Construction)</p>
             {/* <div className="project-links">
               <a

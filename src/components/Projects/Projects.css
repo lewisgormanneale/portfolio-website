@@ -57,6 +57,10 @@
   object-position: center top;
 }
 
+#soc-project > .project-screenshot {
+  object-position: center center;
+}
+
 .project-overlay {
   display: flex;
   flex-direction: column;

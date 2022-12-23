@@ -4,20 +4,9 @@ import { IoChevronDown } from "react-icons/io5";
 import "./Header.css";
 
 export default function Header() {
-  const [scrollArrowVisibility, setScrollArrowVisibility] =
-    useState("scroll-arrow");
-
-  function toggleScrollArrowVisibility() {
-    if (scrollArrowVisibility === "scroll-arrow hidden") {
-      setScrollArrowVisibility("scroll-arrow");
-    } else {
-      setScrollArrowVisibility("scroll-arrow hidden");
-    }
-  }
-
   return (
     <div className="header-wrapper">
-      <NavList toggleScrollArrowVisibility={toggleScrollArrowVisibility} />
+      <NavList />
       <header className="header">
         <div className="main-header-content">
           <div className="header-text">
@@ -39,7 +28,7 @@ export default function Header() {
             ></img>
           </div>
         </div>
-        <p className={scrollArrowVisibility}>
+        <p className="scroll-arrow">
           <IoChevronDown />
         </p>
       </header>

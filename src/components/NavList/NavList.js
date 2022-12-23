@@ -3,34 +3,45 @@ import "./NavList.css";
 import { IoMenu, IoMoon } from "react-icons/io5";
 
 export default function NavList({ toggleScrollArrowVisibility }) {
-  const [navMenuVisibility, setNavMenuVisibility] = useState("nav-menu hidden");
+  const [navMenuVisibility, setNavMenuVisibility] =
+    useState("nav-menu-container");
 
   function toggleNavMenuVisibility() {
-    if (navMenuVisibility === "nav-menu hidden") {
-      toggleScrollArrowVisibility();
-      setNavMenuVisibility("nav-menu active");
+    if (navMenuVisibility === "nav-menu-container") {
+      setNavMenuVisibility("nav-menu-container active");
     } else {
-      toggleScrollArrowVisibility();
-      setNavMenuVisibility("nav-menu hidden");
+      setNavMenuVisibility("nav-menu-container");
     }
   }
 
   return (
     <nav className="navlist">
-      <div className="nav-menu-container">
-        <ul className={navMenuVisibility}>
+      <div className={navMenuVisibility}>
+        <ul className="nav-menu">
           <li>
-            <a href="#projects" className="nav-link">
+            <a
+              href="#projects"
+              className="nav-link"
+              onClick={toggleNavMenuVisibility}
+            >
               <span>Projects</span>
             </a>
           </li>
           <li>
-            <a href="#about-me" className="nav-link">
+            <a
+              href="#about-me"
+              className="nav-link"
+              onClick={toggleNavMenuVisibility}
+            >
               <span>About Me</span>
             </a>
           </li>
           <li>
-            <a href="#contact" className="nav-link">
+            <a
+              href="#contact"
+              className="nav-link"
+              onClick={toggleNavMenuVisibility}
+            >
               <span>Contact</span>
             </a>
           </li>
