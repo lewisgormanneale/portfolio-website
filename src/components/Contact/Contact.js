@@ -21,27 +21,36 @@ export default function Contact() {
             out to me on one of my socials!
           </p>
           <div className="social-icons">
-            <a
-              href="https://www.linkedin.com/in/lewisgormanneale/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <IoLogoLinkedin className="social-icon" id="linkedin" />
-            </a>
-            <a
-              href="https://github.com/lewisgormanneale"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <IoLogoGithub className="social-icon" id="github" />
-            </a>
-            <a
-              href="https://twitter.com/lewisgneale"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <IoLogoTwitter className="social-icon" id="twitter" />
-            </a>
+            <div className="social-icon-container">
+              <a
+                href="https://www.linkedin.com/in/lewisgormanneale/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <IoLogoLinkedin className="social-icon" id="linkedin" />
+              </a>
+              <p>LinkedIn</p>
+            </div>
+            <div className="social-icon-container">
+              <a
+                href="https://github.com/lewisgormanneale"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <IoLogoGithub className="social-icon" id="github" />
+              </a>
+              <p>GitHub</p>
+            </div>
+            <div className="social-icon-container">
+              <a
+                href="https://twitter.com/lewisgneale"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <IoLogoTwitter className="social-icon" id="twitter" />
+              </a>
+              <p>Twitter</p>
+            </div>
           </div>
         </div>
       </div>

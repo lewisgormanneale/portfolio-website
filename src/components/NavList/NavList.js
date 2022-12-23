@@ -29,7 +29,11 @@ export default function NavList({ toggleScrollArrowVisibility }) {
   return (
     <nav className="navlist">
       <div className={navMenuVisibility}>
-        <ul className="nav-menu">
+        <ul
+          className={`nav-menu ${
+            darkMode ? "nav-menu-dark" : "nav-menu-light"
+          }`}
+        >
           <li>
             <a
               href="#projects"
@@ -59,10 +63,20 @@ export default function NavList({ toggleScrollArrowVisibility }) {
           </li>
         </ul>
       </div>
-      <div onClick={toggleDarkMode} className="dark-mode-toggle toggle">
+      <div
+        onClick={toggleDarkMode}
+        className={`dark-mode-toggle toggle ${
+          darkMode ? "toggle-dark" : "toggle-light"
+        }`}
+      >
         <IoMoon />
       </div>
-      <div onClick={toggleNavMenuVisibility} className="menu-toggle toggle">
+      <div
+        onClick={toggleNavMenuVisibility}
+        className={`menu-toggle toggle ${
+          darkMode ? "toggle-dark" : "toggle-light"
+        }`}
+      >
         <IoMenu />
       </div>
     </nav>

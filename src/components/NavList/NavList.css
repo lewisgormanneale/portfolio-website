@@ -14,7 +14,6 @@
   top: 0;
   right: 0;
   width: 100%;
-  background-color: #55e2d3;
   width: 100%;
   height: 100vh;
   transition: 0.4s;
@@ -34,6 +33,14 @@
   width: 100%;
   padding-bottom: 50px;
   height: 100vh;
+}
+
+.nav-menu-light {
+  background-color: #55e2d3;
+}
+
+.nav-menu-dark {
+  background-color: black;
 }
 
 .nav-menu > li {
@@ -60,10 +67,17 @@
   top: 20px;
   cursor: pointer;
   position: absolute;
-  background-color: #f3ffff;
   width: 35px;
   height: 35px;
   border-radius: 3px;
+}
+
+.toggle-light {
+  background-color: #f3ffff;
+}
+
+.toggle-dark {
+  background-color: #000000;
 }
 
 .toggle:hover {
