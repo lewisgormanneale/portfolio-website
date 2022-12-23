@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../contexts/ThemeContext";
 import "./AboutMe.css";
 
 export default function AboutMe() {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <section className="about-me" id="about-me">
+    <section
+      className={`about-me ${darkMode ? "about-me-dark" : "about-me-light"}`}
+      id="about-me"
+    >
       <h2>About Me 🙋🏻‍♂️</h2>
       <div className="about-me-content">
         <div className="about-me-description">

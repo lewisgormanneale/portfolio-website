@@ -1,7 +1,14 @@
 .about-me {
   display: flex;
   flex-direction: column;
-  background-color: #e7ffff;
+}
+
+.about-me-light {
+  background-color: var(--light-background-darker);
+}
+
+.about-me-dark {
+  background-color: var(--dark-background-lighter);
 }
 
 .about-me-content {

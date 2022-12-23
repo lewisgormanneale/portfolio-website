@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../contexts/ThemeContext";
 import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
 import "./Contact.css";
 
 export default function Contact() {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <section className="contact" id="contact">
+    <section
+      className={`contact ${darkMode ? "contact-dark" : "contact-light"}`}
+      id="contact"
+    >
       <h2>Contact Me ✉️</h2>
       <div className="contact-content">
         <div className="contact-greeting-and-socials">

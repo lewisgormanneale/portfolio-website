@@ -1,5 +1,9 @@
 :root {
   --icon-bg: #1fab83;
+  --light-background-lighter: #f3ffff;
+  --light-background-darker: #e7ffff;
+  --dark-background-lighter: #061211;
+  --dark-background-darker: #030908;
 }
 
 * {

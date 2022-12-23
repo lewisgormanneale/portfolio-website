@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../contexts/ThemeContext";
 import "./Toolkit.css";
 
 export default function Toolkit() {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <section className="toolkit">
+    <section
+      className={`toolkit ${darkMode ? "toolkit-dark" : "toolkit-light"}`}
+    >
       <h2>My Toolkit 🧰</h2>
       <div className="toolkit-content">
         <div className="toolkit-icons">

@@ -4,6 +4,14 @@
   background-color: #e7ffff;
 }
 
+.contact-light {
+  background-color: var(--light-background-darker);
+}
+
+.contact-dark {
+  background-color: var(--dark-background-lighter);
+}
+
 .contact-content {
   display: flex;
   flex-wrap: wrap;

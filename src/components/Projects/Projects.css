@@ -5,7 +5,14 @@
   align-items: flex-start;
   gap: 20px;
   width: 100%;
-  background-color: #f3ffff;
+}
+
+.projects-light {
+  background-color: var(--light-background-lighter);
+}
+
+.projects-dark {
+  background-color: var(--dark-background-darker);
 }
 
 .project-row {

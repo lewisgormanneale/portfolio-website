@@ -1,7 +1,14 @@
 .toolkit {
   display: flex;
   flex-direction: column;
-  background-color: #f3ffff;
+}
+
+.toolkit-light {
+  background-color: var(--light-background-lighter);
+}
+
+.toolkit-dark {
+  background-color: var(--dark-background-darker);
 }
 
 .toolkit-content {

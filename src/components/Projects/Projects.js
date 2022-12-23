@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../contexts/ThemeContext";
 import { IoLogoGithub } from "react-icons/io5";
 import "./Projects.css";
 
 export default function Projects() {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <section className="projects" id="projects">
+    <section
+      className={`projects ${darkMode ? "projects-dark" : "projects-light"}`}
+      id="projects"
+    >
       <h2>My Projects ⚡️</h2>
       <p>
         Hover or tap for information on each project. More of my projects can be
