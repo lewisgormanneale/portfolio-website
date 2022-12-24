@@ -34,21 +34,26 @@
 
 .project {
   position: relative;
+  min-height: 300px;
   height: 300px;
+  max-height: 300px;
   overflow: hidden;
   padding: 0;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   box-sizing: border-box;
   opacity: 0.95;
+  transition: 0.3s;
 }
 
 .project-large {
   width: 600px;
+  max-width: 600px;
 }
 
 .project-small {
   width: 400px;
+  max-width: 400px;
 }
 
 .project * {
@@ -111,7 +116,7 @@
 .project-button {
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: white !important;
   background-color: var(--icon-bg);
   border-radius: 5px;
   border: none;
@@ -125,9 +130,11 @@
   }
   .project-large {
     width: 300px;
+    max-width: 300px;
   }
 
   .project-small {
     width: 300px;
+    max-width: 300px;
   }
 }
