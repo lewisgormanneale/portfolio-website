@@ -14,10 +14,20 @@ export default function Header() {
               <span>Hi, I'm Lewis</span> 👋🏻
             </h1>
             <p>
-              Full stack <span>developer</span> in training.
+              Full stack <span>developer</span> in training 💻
             </p>
             <p>
-              Graduating from the <span>School of Code</span> in February 2023.
+              Graduating from the{" "}
+              <span>
+                <a
+                  href="https://www.schoolofcode.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  School of Code
+                </a>
+              </span>{" "}
+              in February 2023 🎓
             </p>
           </div>
           <div className="avatar-container">

@@ -16,9 +16,9 @@ export default function Contact() {
         <div className="contact-greeting-and-socials">
           <p className="contact-greeting">
             I'm enrolled on the School of Code until February 2023, at which
-            point I'll be looking to start my career as a developer. If you'd
-            like to discuss a potential opportunity or anything else, just reach
-            out to me on one of my socials!
+            point I'm looking to enter as a developer. If you'd like to discuss
+            a potential opportunity or anything else, please reach out to me
+            through one of the methods below!
           </p>
           <div className="social-icons">
             <div className="social-icon-container">

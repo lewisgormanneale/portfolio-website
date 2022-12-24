@@ -19,9 +19,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 20px;
   width: 100%;
+}
+
+.project-row:nth-of-type(1) {
+  padding-top: 30px;
+}
+
+.project-row:nth-of-type(2) {
+  padding-bottom: 30px;
 }
 
 .project {
@@ -109,4 +117,17 @@
   border: none;
   padding: 10px 15px;
   width: auto;
+}
+
+@media only screen and (max-width: 1050px) {
+  .project-row {
+    flex-wrap: wrap;
+  }
+  .project-large {
+    width: 300px;
+  }
+
+  .project-small {
+    width: 300px;
+  }
 }

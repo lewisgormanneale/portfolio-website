@@ -62,3 +62,23 @@ section {
 .hidden {
   visibility: hidden;
 }
+
+/* unvisited link */
+a:link {
+  color: var(--icon-bg);
+}
+
+/* visited link */
+a:visited {
+  color: var(--icon-bg);
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--footer-bg);
+}
+
+/* selected link */
+a:active {
+  color: var(--footer-bg);
+}

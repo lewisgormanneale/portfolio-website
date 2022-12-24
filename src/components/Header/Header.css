@@ -11,12 +11,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10vw;
   width: 100%;
+  padding: 30px;
+}
+
+.header-text > h1 {
+  font-size: 3rem;
+}
+
+.header-text > p {
+  font-size: 1.3rem;
 }
 
 .avatar-container {
-  max-width: 50%;
+  width: 240px;
 }
 
 .avatar {
