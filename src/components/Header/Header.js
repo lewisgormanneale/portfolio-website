@@ -32,7 +32,7 @@ export default function Header() {
           </div>
           <div className="avatar-container">
             <img
-              src="images/memoji.jpeg"
+              src="images/soc-avatar.png"
               alt="A pixelated avatar of Lewis"
               className="avatar"
             ></img>

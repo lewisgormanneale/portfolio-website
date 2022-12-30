@@ -70,12 +70,33 @@
   display: block;
 }
 
+#mdoc-project {
+  background-color: #0c1f1ef7;
+  display: flex;
+  justify-content: center;
+}
+
+#mdoc-project > .project-screenshot {
+  object-fit: contain;
+  width: 70%;
+  object-position: center;
+}
+
 #rumu-project > .project-screenshot {
   object-position: center center;
 }
 
+#ptp-project {
+  background-color: rgba(255, 75, 75, 0.726);
+  display: flex;
+  justify-content: center;
+}
+
 #ptp-project > .project-screenshot {
   object-position: center top;
+  object-fit: contain;
+  width: 90%;
+  object-position: center;
 }
 
 #soc-project > .project-screenshot {

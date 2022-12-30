@@ -27,7 +27,7 @@ export default function Projects() {
         <div className="project project-large" id="mdoc-project">
           <img
             className="project-screenshot"
-            src="images/mdoc-screenshot.png"
+            src="images/mdoc-logo.png"
             alt="project screenshot"
           ></img>
           <div className="project-overlay">
@@ -88,7 +88,7 @@ export default function Projects() {
         <div className="project project-small" id="ptp-project">
           <img
             className="project-screenshot"
-            src="images/ptp-screenshot.png"
+            src="images/ptp-logo.png"
             alt="project screenshot"
           ></img>
           <div className="project-overlay">
