@@ -87,15 +87,19 @@
 }
 
 #ptp-project {
-  background-color: rgba(255, 75, 75, 0.726);
+  background-color: #efc416e4;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 #ptp-project > .project-screenshot {
   object-position: center top;
   object-fit: contain;
+  background-color: white;
   width: 90%;
+  border-radius: 10px;
+  height: 45%;
   object-position: center;
 }
 
