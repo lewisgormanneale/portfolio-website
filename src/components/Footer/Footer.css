@@ -7,3 +7,23 @@ footer {
   height: 50px;
   background-color: var(--footer-bg);
 }
+
+/* unvisited link */
+footer > p > a:link {
+  color: white;
+}
+
+/* visited link */
+footer > p > a:visited {
+  color: white;
+}
+
+/* mouse over link */
+footer > p > a:hover {
+  color: rgba(255, 255, 255, 0.89);
+}
+
+/* selected link */
+footer > p > a:active {
+  color: rgba(255, 255, 255, 0.576);
+}
