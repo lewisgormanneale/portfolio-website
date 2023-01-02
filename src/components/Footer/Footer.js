@@ -4,7 +4,11 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <footer>
-      <p>View On GitHub</p>
+      <p>
+        <a href="https://github.com/lewisgormanneale/portfolio-website">
+          View On GitHub
+        </a>
+      </p>
     </footer>
   );
 }

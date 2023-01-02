@@ -14,12 +14,15 @@ export default function Contact() {
       <h2>Contact Me ✉️</h2>
       <div className="contact-content">
         <div className="contact-greeting-and-socials">
-          <p className="contact-greeting">
-            I'm enrolled on the School of Code until <span>February 2023</span>,
-            at which point <span>I'm looking for a job as a developer</span>. If
-            you'd like to discuss a potential opportunity or anything else,
-            please reach out to me!
-          </p>
+          <div className="contact-greeting">
+            <p>
+              I'm enrolled on the School of Code until{" "}
+              <span>February 2023</span>, at which point{" "}
+              <span>I'm looking for a job as a developer</span>. If you'd like
+              to discuss a potential opportunity or anything else, please reach
+              out to me!
+            </p>
+          </div>
           <div className="social-icons">
             <div className="social-icon-container">
               <a
